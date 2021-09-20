@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo--header {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+}
+
+.enlaces {
+  width: 70%;
+  background-color: cornflowerblue;
+}
+
+.enlaces a {
+  color: black;
+  text-decoration: none;
+}
+
+.enlace--1,
+.enlace--2,
+.enlace--3,
+.enlace--4,
+.enlace--5,
+.enlace--6,
+.banner--3{
+    width: 100%;
+    height: 50px;
+    border: .2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner--3{
+    width: 100%;
+    height: 80px;
+    background-color: darkcyan;
+}
+
+.content{
+    width: 150%;
+    margin-left: -30%;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.content h1{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.banners{
+    width: 80%;
+    margin-left: 20%;
+    background: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+}
+
+.banners a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+footer h1{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 760px){
+    .titulo--header{
+        font-size: 2em;
+    }
+
+    .content h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 510px){
+    .titulo--header{
+        font-size: 1.5em;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .enlaces a{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 375px){
+    .titulo--header{
+        font-size: 1em;
+    }
+
+    .content h1{
+        font-size: 1.5em;
+    }
+}
